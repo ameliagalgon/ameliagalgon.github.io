@@ -69,7 +69,7 @@ nav ul li a:hover{
     width: 100vw;
 
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom right;
     background-size: auto;
 }
 #first-project, #third-project{
