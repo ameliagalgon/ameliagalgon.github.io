@@ -69,6 +69,10 @@ nav ul li a:hover{
     width: 100vw;
     background-color: #000;
     color: #fff;
+    background-image: url(../assets/images/bloc-jams_low_opacity.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
 }
 .web .content{
     padding: 70px 100px 100px 150px;
@@ -107,9 +111,10 @@ nav ul li a:hover{
 .web .project .project-brief{
     text-transform: none;
 }
+/*
 .web .project .project-image{
     margin-left: 50px;
-    /** for mockup purposes **/
+
     width: 600px;
     height: 325px;
     color: #000;
@@ -117,5 +122,6 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*************************/
+
 }
+*/
