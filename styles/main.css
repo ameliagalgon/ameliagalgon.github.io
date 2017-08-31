@@ -63,21 +63,31 @@ nav ul li a:hover{
 }
 
 
-.web{
+.project{
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #000;
-    color: #fff;
-    background-image: url(../assets/images/bloc-jams_low_opacity.png);
+
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto;
 }
-.web .content{
+#first-project, #third-project{
+    background-color: #000;
+    color: #fff;
+    background-image: url(../assets/images/bloc-jams_low_opacity.png);
+}
+#second-project{
+    background-image: url(../assets/images/bloc-jams_low_opacity.png);
+}
+#second-project .project-link{
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+}
+
+.project .content{
     padding: 70px 100px 100px 150px;
 }
-.web .content .project-link{
+.project .content .project-link{
     width: 100px;
     height: 100px;
     background-color: #fff;
@@ -91,37 +101,25 @@ nav ul li a:hover{
     bottom: 50px;
     right: 50px;
 }
-.web .content .project-link span{
+.project .content .project-link span{
     color: #000;
     font-size: 2em;
 }
-.web .project{
+.project .project-content{
     text-transform: uppercase;
-    display: flex;
-}
-.web .project .project-content{
+    padding: 10px 20px 20px 20px;
     width: 35%;
 }
-.web .project .project-name{
+#second-project .project-content{
+    background-color: #fff;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+}
+.project .project-name{
     font-size: 3em;
 }
-.web .project .project-tools{
+.project .project-tools{
     font-style: italic;
 }
-.web .project .project-brief{
+.project .project-brief{
     text-transform: none;
 }
-/*
-.web .project .project-image{
-    margin-left: 50px;
-
-    width: 600px;
-    height: 325px;
-    color: #000;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-*/
