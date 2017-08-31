@@ -123,3 +123,44 @@ nav ul li a:hover{
 .project .project-brief{
     text-transform: none;
 }
+
+
+/*** ART homepage ***/
+.art{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.art .content{
+    padding: 70px 100px 100px 150px;
+    width: 30%;
+}
+.art .content h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.art .content p{
+    padding-left: 20px;
+}
+.art .link{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**placement**/
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.art .link span{
+    color: #000;
+    font-size: 2em;
+}
