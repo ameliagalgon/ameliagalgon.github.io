@@ -73,11 +73,12 @@ nav ul li a:hover{
     background-size: auto;
 }
 #first-project, #third-project{
-    background-color: #000;
+    background-color: #00171F;
     color: #fff;
     background-image: url(../assets/images/bloc-jams_low_opacity.png);
 }
 #second-project{
+    background-color: #fff;
     background-image: url(../assets/images/bloc-jams.png);
 }
 #second-project .project-link{
