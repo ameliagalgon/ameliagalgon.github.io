@@ -78,8 +78,10 @@ nav ul li a:hover{
     background-image: url(../assets/images/bloc-jams_low_opacity.png);
 }
 #second-project{
-    background-color: #fff;
-    background-image: url(../assets/images/bloc-jams.png);
+    background-color: #2A2E45;
+    color: #fff;
+    background-image: url(../assets/images/bloc-chat_low_opacity_copy.png);
+    background-size: auto 100vh;
 }
 #second-project .project-link{
     box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
@@ -113,10 +115,6 @@ nav ul li a:hover{
     text-transform: uppercase;
     padding: 10px 20px 20px 20px;
     width: 35%;
-}
-#second-project .project-content{
-    background-color: #fff;
-    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
 }
 .project .project-name{
     font-size: 3em;
