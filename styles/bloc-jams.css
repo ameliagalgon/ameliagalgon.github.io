@@ -1,0 +1,75 @@
+body{
+    background-color: #563650;
+    color: #fff;
+    overflow: hidden;
+}
+.project .content{
+    padding-top: 20px;
+    display: flex;
+}
+
+.project-description{
+    overflow-y: scroll;
+    height: 60vh;
+
+}
+
+.project-description p{
+    text-transform: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.link{
+    margin: 10px 0;
+}
+.link a{
+    color: #000;
+    background-color: #fff;
+    text-transform: none;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.project-images{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.project-images .pic{
+    margin: 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+}
+.project-images #pic1{
+    width: 100%;
+    height: 70%;
+}
+.project-images #mobile-pic1,
+.project-images #mobile-pic2{
+    width: 100px;
+    height: 160px;
+}
+.project-images #pic1{
+    background-image: url(../assets/images/bloc-jams-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.project-images #mobile-pic1{
+    background-image: url(../assets/images/bloc-jams-mobile-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.project-images #mobile-pic2{
+    background-image: url(../assets/images/bloc-jams-mobile-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}

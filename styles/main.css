@@ -72,8 +72,8 @@ nav ul li a:hover{
     background-position: bottom right;
     background-size: auto;
 }
-#first-project, #third-project{
-    background-color: #00171F;
+#first-project{
+    background-color: #563650;
     color: #fff;
     background-image: url(../assets/images/bloc-jams_low_opacity.png);
 }
@@ -83,6 +83,9 @@ nav ul li a:hover{
 }
 #second-project .project-link{
     box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+}
+#third-project{
+
 }
 
 .project .content{
