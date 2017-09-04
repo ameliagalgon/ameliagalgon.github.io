@@ -5,25 +5,30 @@ body{
     overflow-x: hidden;
 }
 nav{
-    height: 100vh;
-    width: 100px;
+    height: 60px;
+    width: 100%;
     background-color: #fff;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
     /** be above content at all times **/
     z-index: 10;
 }
+
 nav ul{
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 350px;
+    align-items: center;
+    margin: 0;
+    padding: 10px 10px 10px 20px;
 }
+
 nav ul li{
-    margin: 10px 0;
+    /*margin: 10px 0;*/
+    font-size: 0.88em;
 }
 nav ul li a{
     text-decoration: none;
@@ -31,6 +36,11 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: #000;
+}
+
+nav ul li a img{
+    width: 40px;
+    height: auto;
 }
 .hero{
     height: 100vh;
