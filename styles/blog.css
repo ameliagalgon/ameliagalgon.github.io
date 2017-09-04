@@ -1,0 +1,26 @@
+.blog{
+    margin-left: 100px;
+    padding: 10px 50px;
+}
+
+.blog-post{
+    padding: 5%;
+    border-bottom: 1px solid #000;
+}
+
+.blog-post .title{
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.blog-post .date{
+    color: #aeaeae;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.blog-post .content{
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
