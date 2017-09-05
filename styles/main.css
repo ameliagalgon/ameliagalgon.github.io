@@ -1,6 +1,10 @@
 html{
     font-family: 'Raleway', sans-serif;
 }
+/*** remove all scroll bars ***/
+::-webkit-scrollbar {
+    display: none;
+}
 body{
     overflow-x: hidden;
 }
@@ -47,9 +51,12 @@ nav ul li a img{
     width: 100vw;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 .hero .content{
-    padding: 150px 0 0 15%;
+    padding: 0 0 30px 50px;
     width: 30%;
     /*margin: 150px 0 0 15%;*/
 }
@@ -62,7 +69,7 @@ nav ul li a img{
     margin-top: 30px;
 }
 .hero .content h1{
-    font-size: 4em;
+    font-size: 4.2em;
     margin: 0;
     line-height: 60px;
 }
@@ -75,7 +82,7 @@ nav ul li a img{
 
 .project{
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 100vw;
 
     background-repeat: no-repeat;
@@ -101,7 +108,19 @@ nav ul li a img{
 }
 
 .project .content{
-    padding: 70px 100px 100px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 50px;
+    height: calc(100vh - 60px);
+}
+.project .content h4:nth-child(1){
+    text-align: right;
+    width: 400px;
+    border-bottom: 1px solid #fff;
+    align-self: flex-end;
+    padding-right: 20px;
+    padding-bottom: 10px
 }
 .project .content .project-link{
     width: 100px;
@@ -123,17 +142,24 @@ nav ul li a img{
 }
 .project .project-content{
     text-transform: uppercase;
-    padding: 10px 20px 20px 20px;
-    width: 35%;
+    width: 75%;
+    padding-bottom: 30px;
 }
 .project .project-name{
-    font-size: 3em;
+    font-size: 4em;
+    margin: 5px 0;
+}
+.project .project-type{
+    font-size: 1.5em;
+    margin: 0;
 }
 .project .project-tools{
     font-style: italic;
+    margin: 10px 0;
 }
 .project .project-brief{
     text-transform: none;
+    width: 40%;
 }
 
 

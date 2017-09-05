@@ -1,11 +1,11 @@
 .blog{
-    margin-left: 100px;
-    padding: 10px 50px;
+    padding: 100px 50px 10px 50px;
 }
 
 .blog-post{
-    padding: 5%;
     border-bottom: 1px solid #000;
+    width: 70%;
+    margin: auto;
 }
 
 .blog-post .title{
