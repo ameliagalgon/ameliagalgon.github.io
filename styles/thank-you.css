@@ -1,0 +1,33 @@
+section{
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.response{
+    width: 50%;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+h1, p{
+    width: 100%;
+    text-align: center;
+}
+.social{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.social a{
+    color: #000;
+    margin: 10px;
+}
+.social span{
+    font-size: 2em;
+    margin: 5px;
+    text-align: center;
+}

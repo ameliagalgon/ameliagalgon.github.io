@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles/hover-min.css">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/web.css">
+        <link rel="stylesheet" href="styles/contact.css">
     </head>
     <body>
         <nav>
@@ -22,28 +22,26 @@
                 <li class="hvr-underline-from-center"><a href="contact.html">contact</a></li>
             </ul>
         </nav>
-        <main>
-            <h1>Web development/ design projects</h1>
-            <section class="project-list">
-                <div class="project" id="bloc-jams">
-                    <a href="projects/bloc-jams.html">
-                        <div class="project-image">
-                            <!-- using background-image style -->
-                        </div>
-                    </a>
-                    <div class="project-name">Bloc Jams</div>
-                    <div class="project-brief">An mp3 player built for the web.</div>
-                </div>
-                <div class="project" id="bloc-chat">
-                    <a href="projects/bloc-chat.html">
-                        <div class="project-image">
-                            <!-- using background-image style -->
-                        </div>
-                    </a>
-                    <div class="project-name">Bloc Chat</div>
-                    <div class="project-brief">An online chat forum that supports multiple users.</div>
-                </div>
-            </section>
-        </main>
+        <section>
+            <h1>Contact me</h1>
+            <form action="https://getsimpleform.com/messages?form_api_token=b5c141deb8935d49068df14227eec979" method="post">
+              <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+              <input type='hidden' name='redirect_to' value='http://ameliagalgon.github.io/portfolio-site/thank-you.html' />
+              <!-- all your input fields here.... -->
+              <div id="name">
+                  <label>Name</label>
+                  <input type='text' name='name' placeholder='Your Full Name' />
+              </div>
+              <div id="email">
+                  <label>Email</label>
+                  <input type='email' name='email' placeholder='Your E-mail Address' />
+              </div id="email">
+              <div id="message">
+                  <label>Message</label>
+                  <textarea id="message" name='message' placeholder='Write your message ...'></textarea>
+              </div>
+              <input id="submit" type='submit' value='Send' />
+            </form>
+        </section>
     </body>
 </html>
