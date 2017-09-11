@@ -16,6 +16,8 @@ nav{
     position: fixed;
     /** be above content at all times **/
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul{
@@ -48,6 +50,18 @@ nav ul li a img{
 }
 nav ul li a img:hover{
     animation: spin 0.4s forwards;
+}
+
+nav .social{
+    font-size: 1.5em;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+nav .social a{
+    color: #000;
 }
 
 .hero{

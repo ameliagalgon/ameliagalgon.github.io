@@ -1,7 +1,14 @@
 body{
     background-color: #563650;
     color: #fff;
-    /*overflow: hidden;*/
+}
+
+.project{
+    all: initial;
+}
+
+.project .content{
+    flex-direction: row;
 }
 
 .project-images .pic{
