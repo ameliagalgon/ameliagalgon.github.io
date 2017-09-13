@@ -3,19 +3,102 @@ body{
     color: #fff;
 }
 
+.project .content{
+    padding: 100px 50px;
+    max-width: 950px;
+}
+
+.project .project-content{
+    width: 100%;
+}
+
+.project .project-description{
+    text-transform: none;
+}
+
+.project .project-image{
+    background-image: url(../assets/images/bloc-jams-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100px;
+    height: 160px
+}
+/*
+.project .project-images{
+    height: 400px;
+}
+
 .project-images .pic{
     margin: 5px;
     box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
 }
-
 .project-images #pic1{
-    width: 100%;
-    height: 70%;
+    height: auto;
 }
-
+.project-images #mobile-pic1,
+.project-images #mobile-pic2{
+    width: 100px;
+    height: 160px;
+}
 .project-images #pic1{
-    background-image: url(../assets/images/bloc-chat.png);
+    background-image: url(../assets/images/bloc-jams-1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
+}
+*/
+.project .project-images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.project .project-images .pic{
+    margin-bottom: 10px;
+}
+
+.project .project-images #pic1{
+    background-image: url(../assets/images/bloc-chat.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 160px;
+    width: 200px;
+}
+.project-mobile-images{
+    display: flex;
+    justify-content: space-around;
+}
+.project-links{
+    display: flex;
+    justify-content: flex-start;
+}
+.link{
+    background-color: #fff;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+.link a{
+    display: block;
+    color: #563650;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 450px){
+    .project .content{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .project .project-name{
+        font-size: 2.5em;
+    }
 }

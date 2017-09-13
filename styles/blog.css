@@ -26,3 +26,21 @@
     line-height: 1.5em;
     font-size: 0.9em;
 }
+
+@media screen and (max-width: 500px){
+    .blog{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .blog-post{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .blog-post .title{
+        font-size: 2em;
+    }
+    .blog-post .content{
+        font-size: 1.1em;
+    }
+}

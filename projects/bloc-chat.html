@@ -21,26 +21,46 @@
                 <li class="hvr-underline-from-center"><a href="../blog.html">blog</a></li>
                 <li class="hvr-underline-from-center"><a href="../contact.html">contact</a></li>
             </ul>
+            <div class="social">
+                <a href="https://github.com/ameliagalgon" target="_blank"><span class="ion-social-github"></span></a>
+                <a href="https://www.instagram.com/amelia_galgon/" target="_blank"><span class="ion-social-instagram"></span></a>
+            </div>
+
+            <div class="dropdown">
+                <a href="index.html"><img class="logo" src="assets/images/logo.svg"></a>
+                <span class="ion-navicon">
+                </span>
+                <ul class="dropdown-content">
+                    <li><a href="web.html">web</a></li>
+                    <li><a href="#">art</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
         </nav>
         <section class="project">
             <div class="content">
                 <div class="project-content">
                     <h1 class="project-name">Bloc Chat</h1>
-                    <div class="project-description">
-                        <p>Bloc Chat is an online messaging forum that is capable of handling multiple users. Users can create new rooms and send messages directly to a selected room. </p>
-                        <p>The project was a part of the Bloc Web Developer curriculum.</p>
-                        <p>The application needed to be able to handle multiple use cases. The user needs to be able to see the list of available chatrooms, as well as create a new room as they desire. The user should be able to see all of the messages associated with each room. Each user should be able to display their username in each chat room and send messages to a chat room that are associated with their username.</p>
-                        <p>The solution was to use Angular with a Firebase database to store the data. The database was broken up into a rooms table and a messages table. Each room had a key associated with it and each message had a roomId attribute that held the key to the room that it was associated with. The user’s username was stored in the browser’s cookies and added to the message object when a new message was created. In order to create a new room, I used Bootstrap’s Modal to prompt the user for a new room name. I used that same tool for when the user first gives their username to the browser.</p>
-                        <p>Bloc Chat is able to have multiple chat rooms that any user an access and communicate through. Currently, the application only runs locally.</p>
-                        <p>It would be good to have the application deployed so that it can be accessed by multiple clients. In that case, user authorization can be used so that each user has their own list of chat rooms. Then they can grant access to their chatroom to other users.</p>
+                    <div class="project-links">
+                        <div class="link github-link">
+                            <a href="https://github.com/ameliagalgon/bloc-chat" target="_blank">View on github</a>
+                        </div>
                     </div>
-                    <div class="link github-link">
-                        <a href="https://github.com/ameliagalgon/bloc-chat" target="_blank">View on github</a> <!-- change this -->
-                    </div>
-                </div>
-                <div class="project-images">
-                    <div class="pic" id="pic1">
-                        <!--<img src="../assets/images/bloc-chat.png">-->
+                    <div class="description-container">
+                        <div class="project-description">
+                            <p>Bloc Chat is an online messaging forum that is capable of handling multiple users. Users can create new rooms and send messages directly to a selected room. </p>
+                            <p>The project was a part of the Bloc Web Developer curriculum.</p>
+                            <p>The application needed to be able to handle multiple use cases. The user needs to be able to see the list of available chatrooms, as well as create a new room as they desire. The user should be able to see all of the messages associated with each room. Each user should be able to display their username in each chat room and send messages to a chat room that are associated with their username.</p>
+                            <p>The solution was to use Angular with a Firebase database to store the data. The database was broken up into a rooms table and a messages table. Each room had a key associated with it and each message had a roomId attribute that held the key to the room that it was associated with. The user’s username was stored in the browser’s cookies and added to the message object when a new message was created. In order to create a new room, I used Bootstrap’s Modal to prompt the user for a new room name. I used that same tool for when the user first gives their username to the browser.</p>
+                            <p>Bloc Chat is able to have multiple chat rooms that any user an access and communicate through. Currently, the application only runs locally.</p>
+                            <p>It would be good to have the application deployed so that it can be accessed by multiple clients. In that case, user authorization can be used so that each user has their own list of chat rooms. Then they can grant access to their chatroom to other users.</p>
+                        </div>
+                        <div class="project-images">
+                            <div class="pic" id="pic1">
+                                <!--<img src="../assets/images/bloc-chat.png">-->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -40,3 +40,20 @@ main .project .project-name{
     text-transform: uppercase;
     margin: 10px 0;
 }
+
+main .project .project-brief{
+    width: 100%;
+}
+
+@media screen and (max-width: 500px){
+    main{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    main h1{
+        font-size: 1.5em;
+    }
+    main .project{
+        min-width: 200px;
+    }
+}
