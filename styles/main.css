@@ -294,6 +294,15 @@ nav .dropdown-menu{
     .content{
         padding-left: 10px !important;
     }
+
+
+    .project .project-link{
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .project .project-link span{
+        font-size: 1em !important;
+    }
 }
 @media screen and (max-width: 350px){
     .hero .content h1{
