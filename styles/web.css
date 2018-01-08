@@ -33,6 +33,9 @@ main .project .project-image{
 #bloc-chat .project-image{
     background-image: url(../assets/images/bloc-chat.png);
 }
+#bloccit .project-image{
+  background-image: url(../assets/images/bloccit-1.png);
+}
 
 main .project .project-name{
     font-weight: 900;

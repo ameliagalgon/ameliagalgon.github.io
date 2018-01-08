@@ -111,22 +111,26 @@ nav .dropdown-menu{
     background-position: bottom right;
     background-size: auto;
 }
-#first-project{
+#bloc-jams-main{
     background-color: #563650;
     color: #fff;
     background-image: url(../assets/images/bloc-jams_low_opacity.png);
 }
-#second-project{
+#bloc-chat-main{
     background-color: #2A2E45;
     color: #fff;
     background-image: url(../assets/images/bloc-chat_low_opacity_copy.png);
     background-size: cover;
 }
-#second-project .project-link{
+.project .project-link{
     box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
 }
-#third-project{
-
+#bloccit-main{
+  background-color: #144469;
+  color: #fff;
+  background-image: url(../assets/images/bloccit-1_low_opactiy.png);
+  background-size: cover;
+  background-position: bottom left;
 }
 
 .project .content{

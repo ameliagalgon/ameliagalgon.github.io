@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amelia Galgon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700i,900" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="../styles/hover-min.css">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/bloccit.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><img src="../assets/images/logo.svg"></a></li>
+                <li class="hvr-underline-from-center"><a href="../web.html">web</a></li>
+                <li class="hvr-underline-from-center"><a href="../art.html">art</a></li>
+                <li class="hvr-underline-from-center"><a href="../blog.html">blog</a></li>
+                <li class="hvr-underline-from-center"><a href="../contact.html">contact</a></li>
+            </ul>
+
+            <div class="social">
+                <a href="https://github.com/ameliagalgon" target="_blank"><span class="ion-social-github"></span></a>
+                <a href="https://www.instagram.com/amelia_galgon/" target="_blank"><span class="ion-social-instagram"></span></a>
+            </div>
+
+        </nav>
+        <section class="project">
+            <div class="content">
+                <div class="project-content">
+                    <h1 class="project-name">Bloccit</h1>
+                    <div class="project-description">
+
+                    </div>
+                    <div class="project-links">
+                        <div class="link github-link">
+                            <a href="https://github.com/ameliagalgon/bloccit" target="_blank">View on github</a>
+                        </div>
+                        <div class="link deployment-link">
+                            <a href="https://vast-thicket-98832.herokuapp.com/" target="_blank">View project</a>
+                        </div>
+                    </div>
+
+                    <div class="description-container">
+                        <div class="project-description">
+                            <p>The project was a part of the Bloc Web Developer curriculum</p>
+                            <p>Just like Reddit, Bloccit is an app where people can post, vote on, share and save links and comments. The goal of building this application was to learn how to make a basic app using Rails. I became more fluent in ruby as well as the MVC design pattern. I also learned how to use Heroku's cloud platform to deploy an application.</p>
+                            <p>In order to build Bloccit, I needed to understand that basic structure of a Rails application. The app directory contained the components of the actual applications, such as the models, controllers, and views. The configuration, database files, and test scripts were all seperate from that directory but were still essential for creating the application.</p>
+                            <p>One of the most difficult tasks for me to accomplish was integrating the Sendgrid addon to the production environment so that uses could recieve email notifications from Bloccit. I needed to configure heroku so that it included my Sendgrid credentials and the notifications could link to the corresponing Bloccit page. I used the Figaro gem to set the heroku variables on production with out adding them to my github repository. To link the emails back to the heroku app page, I created a default url host in my production environment and appended the appropirate url link.</p>
+                        </div>
+                        <div class="project-images">
+                            <div class="pic" id="pic1"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
