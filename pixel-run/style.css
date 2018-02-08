@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "8bit";
+    src: url(8bitwonder.ttf);
+}
+
+
+#game #player{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: #2178ff;
+    bottom: 10px;
+    left: 40%;
+}
+
+#game #enemy{
+    display: none;
+    position: absolute;
+    /*top: -50px;*/
+    width: 50px;
+    height: 50px;
+    background-color: #ff2222;
+}
+
+
+#game #score{
+    top: 40px;
+    font-size: 1.2em;
+    color: #000;
+    position: absolute;
+    text-transform: uppercase;
+    left: 5%
+}
+
+body{
+    background: #fff;
+    overflow: hidden;
+    font-family: "8bit";
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+#play{
+    margin: auto;
+    margin-top: 100px;
+}

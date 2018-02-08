@@ -1,0 +1,801 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+    font-family: helvetica, arial;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************** ACTUAL STUFF ***********************/
+
+@font-face{
+    font-family: Minecraft;
+    src: url(Minecraft.ttf);
+}
+@font-face{
+    font-family: Bit8;
+    src: url(8bit.TTF);
+}
+
+@keyframes animatedBackground{
+    from {background-size: 13% auto; }
+    to {background-size: 12% auto}
+}
+
+body{
+    font-family: Bit8, Minecraft;
+    background; #fff;
+    overflow-x: hidden;
+}
+
+a{
+    color: #000;
+}
+
+.page-wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+/* HEADER */
+.intro{
+    text-align: center;
+    margin: auto;
+}
+
+.intro h1{
+    font-size: 3.5em;
+    color: #0084ff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-content: baseline;
+}
+
+.intro h1:before{
+    display: block;
+    content: "";
+    width: 100px;
+    background-image: url("img/border_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30px;
+    margin-left: 70px;
+    margin-right: 20px;
+    align-self: center;
+}
+
+.intro h1:after{
+    display: block;
+    content: "";
+    width: 100px;
+    background-image: url("img/border_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30px;
+    margin-right: 70px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+
+/*
+.intro h1:after{
+    display: block;
+    content: "";
+    top: 25%;
+    margin-right: 5%;
+    position: absolute;
+    width: 100px;
+    background-color: #0084ff;
+    height: 30px;
+}
+*/
+
+.intro h2{
+    color: #0084ff;
+    font-size: 1.1em;
+}
+
+header{
+    padding: 30px 0 40px 0;
+}
+
+/* SUMMARY */
+.summary{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    padding: 120px 0;
+    background-image: url("img/PixelHeart.png");
+    background-repeat: no-repeat;
+    background-size: 13% auto;
+    background-position: center;
+    text-align: center;
+    margin: auto;
+}
+
+.summary p{
+    width: 25%;
+    margin: auto;
+    font-size: .75em;
+    color: #ff0000;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 50px;
+    text-align: center;
+    line-height: 15px;
+}
+
+
+.summary p:first-child{
+    width: 35%;
+    max-width: 400px;
+    display: block;
+}
+
+.summary a{
+    color: #ff0000;
+    text-transform: uppercase;
+    padding: 0 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.summary a:first-child{
+    
+}
+
+.summary a:first-child:before{
+    content: '\A';
+}
+
+
+
+/* THE ROAD TO ENLIGHTMENT */
+.preamble{
+    background: #0084ff;
+    color: #fff;
+    text-align: left;
+    padding: 50px 5%;
+    padding-left: 7%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    background-image: url('img/road.png');
+    background-repeat: no-repeat;
+    background-size: 70px auto;
+    background-position: 2% 50%;
+    align-content: flex-start;
+}
+
+.preamble h3{
+    font-size: 2em;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+.preamble p{
+    margin: auto;
+    width: 30%;
+    line-height: 20px;
+    padding-bottom: 10px;
+    font-family: courier;
+    font-weight: 700;
+    align-items: flex-start;
+}
+
+.preamble p:first-child{
+   width: 60%;
+    align-self: flex-end;
+}
+
+/* SO WHAT IS THIS ABOUT ?*/
+.explanation{
+    padding: 50px 5%;
+    color: #0084ff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("img/bolt.png");
+    background-repeat: no-repeat;
+    background-size: 11% auto;
+    background-position: 90% 50%;
+    /*width: 100%;*/
+}
+
+.explanation h3{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+.explanation p{
+    width: 45%;
+    font-size: 1em;
+    line-height: 20px;
+    font-family: courier;
+    font-weight: 700;
+}
+
+/* PARTICIPATION */
+.participation{
+    background: #ff0000;
+    color: #fff;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.participation h3{
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.participation p{
+    width: 25%;
+    font-size: 1em;
+    line-height: 20px;
+    font-family: courier;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.participation a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Bit8;
+    font-size: .75em;
+}
+
+
+/*BENEFITS*/
+.benefits{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #ff0000;
+    padding: 50px 5%;
+    background-image: url("img/ThumbsUp.png");
+    background-repeat: no-repeat;
+    background-size: 13% auto;
+    background-position: 15% 50%;
+}
+
+.benefits h3{
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 20px 0;
+    margin-left: -5%;
+}
+
+.benefits p{
+    width: 50%;
+    font-size: 1em;
+    font-family: courier;
+    line-height: 20px;
+    font-weight: 700;
+    align-items: center;
+    padding-left: 25%;
+}
+
+
+/* REQUIREMENTS */
+.requirements{
+    background: #0084ff;
+    color: #fff;
+    padding: 10% 5% 0 5%;
+    width: 40%;
+}
+
+.requirements h3{
+    font-size: 2em;
+    margin: 0 0 30px 0;
+}
+
+.requirements p{
+    font-family: courier;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 10px 0;
+    width: 90%;
+}
+
+
+.requirements p:last-child{
+    font-size: .75em;
+}
+
+.requirements p[role="contentinfo"]{
+    font-size: 1.3em;
+}
+
+.contentinfo a:before{
+    content: '\A';
+    white-space: pre;
+}
+
+.requirements a{
+    color: #fff;
+}
+
+.requirements a[href]{
+    font-family: Bit8;
+    text-decoration: none;
+    font-size: .75em;
+}
+
+.requirements a[href="http://www.mezzoblue.com/"]{
+    font-size: 1.3em;
+    content="";
+    white-space: none;
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+    background: #0084ff;
+    width: 50%;
+    padding: 40px 0;
+    position: 50% 0%;
+}
+
+footer a{
+    display: block;
+    background-color: #fff;
+    width: 60%;
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+    margin: auto;
+    margin-bottom: 10px;
+    color: #0084ff;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+}
+
+/* SIDEBAR */
+.sidebar{
+    background-color: #0084ff;
+    background-image: url(img/background.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    background-position: 15% 25%;
+    color: #fff;
+    width: 100%;
+   
+    z-index: 10;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    
+    padding-bottom: 50px;
+    
+}
+
+.sidebar h3{
+    font-size: 2em;
+    border-bottom: 50px solid transparent;
+    border-image:url('img/border.png') 30 round;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    text-align: left;
+    width: 100%;
+    right: 0;
+}
+
+.sidebar ul{
+    margin: 10px 0;
+    padding-right: 50px;
+}
+
+.sidebar li{
+    font-family: courier;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.sidebar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.sidebar .designer-name:after{
+    display: block;
+    background: #fff;
+    float: right;
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+.sidebar .design-name{
+    font-family: Bit8;
+}
+
+.sidebar .design-name:after{
+    content: '\A';
+    white-space: pre;
+}
+
+.sidebar .design-archives a{
+    font-size: 1.3em;
+}
+
+.sidebar .zen-resources a{
+    font-size: 1.3em;
+}
+
+/* FOR SUPPORTING */
+
+.supporting{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/*****************
+    MEDIA QUERIES
+******************/
+
+@media screen and (max-width: 1107px){
+    
+    .intro h1{
+        justify-content: center;
+    }
+    
+    /* GET RID OF LINES ON THE H1 */
+    .intro h1:before{
+        display: none;
+    }
+    
+    .intro h1:after{
+        display: none;
+    }
+    
+    /* SUMMARY */
+    .summary{
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        margin-bottom: 70px;
+        margin-left: 0;
+        margin-left: 0;
+        background-size: 130px auto;
+        width: 100%;
+    }
+    
+    .summary p{
+        text-align: left;
+        padding: 0;
+    }
+    
+    .summary p:first-child{
+        margin-bottom: 180px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .summary p:last-child{
+        padding-left: 50px;
+    }
+    
+    .summary a{
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        font-size: 1.75em;
+        text-decoration: none;
+        line-height: 30px;
+    }
+    
+    /* THE ROAD TO ENLIGHTENMENT */
+    .preamble{
+        background-position: left center;
+    }
+    
+    /*SO WHAT IS THIS ABOUT?*/
+    .explanation{
+        background-size: 20% auto;
+    }
+    
+    /* BENEFITS */
+    .benefits{
+        background-size: 20% auto;
+    }
+    
+    /*FOOTER*/
+    footer a{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sidebar{
+        background-image: none;
+        
+    }
+}
+
+@media screen and (max-width: 860px){
+    .supporting{
+        display: block;
+        
+    }
+    .requirements{
+        width: 100%;
+        flex-wrap: wrap;
+        display: block;
+        
+    }
+    
+    .requirements p[role="contentinfo"]{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    
+    .requirements p{
+        width: 90%;
+    }
+    
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        align-content: space-around;
+        height: 100px;
+    }
+    
+    footer a{
+        padding: 10px 0;
+        margin: 0;
+        width: 120px;
+        height: 20px;
+    }
+    
+    .sidebar{
+        width: 100%;
+    }
+    
+    .sidebar h3{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    /*THE ROAD TO ENLIGHTENMENT*/
+    .preamble{
+        justify-content: flex-end;
+        background-size: 50px auto;
+        background-repeat: repeat-y;
+        background-position: 2%;
+    }
+    
+    .preamble h3{
+        padding-left: 50px;
+    }
+    
+    .preamble p{
+        margin: 0;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 727px){
+    .summary{
+        background-position: 50% 30%;
+    }
+    
+
+}
+
+@media screen and (max-width: 560px){
+    .preamble{
+        background-image: none;
+        padding:  10px 20px;
+        padding-left: 
+        margin: 0;
+        display: block;
+   }
+    
+    .preamble h3{
+       font-size: 1.7em;
+        width: 80%;
+        text-align: left;
+        padding: 10px 0;
+        margin: 0;
+        
+    }
+    
+    .preamble p{
+        width: 90%;
+        font-size: 1.2em;
+    }
+    
+    .explanation{
+        display: block;
+        background-image: none;
+        padding: 20px 0 20px 20px;
+    }
+    
+    .explanation h3{
+        text-align: left;
+        font-size: 1.7em;
+    }
+    
+    .explanation p{
+        width: 90%;
+        padding: 0;
+        font-size: 1.2em;
+        margin-bottom: 10px
+    }
+    
+    .participation{
+        display: block;
+    }
+    
+    .participation h3{
+        font-size: 1.7em;
+    }
+    
+    .participation p{
+        width: 100%;
+        font-size: 1.2em;
+    }
+    
+    .benefits{
+        background-image: none;
+    }
+    
+    .benefits h3{
+        font-size: 1.7em;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .benefits p{
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 0;
+        font-size: 1.2em;
+    }
+    
+    .requirements h3{
+        font-size: 1.7em;
+    }
+    
+    .requirements p{
+        font-size: 1.2em;
+    }
+    
+}
+
+@media screen and (max-width: 350px){
+    .intro h1{
+        font-size: 2.3em;
+    }
+    
+    .summary p:first-child{
+        padding-bottom: 60px;
+    }
+    
+    .preamble h3{
+        font-size: 1.2em;
+    }
+    
+    .explanation h3{
+        font-size: 1.2em
+    }
+    
+    .participation h3{
+        font-size: 1.2em;
+    }
+    
+    .benefits h3{
+        font-size: 1.2em;
+    }
+    
+    .requirements h3{
+        font-size: 1.2em;
+    }
+    
+    .sidebar h3{
+        font-size: 1.2em;
+    }
+    
+    .sidebar ul{
+        padding: 0;
+        margin-right: 10px;
+    }
+    
+    .sidebar ul .design-name{
+        font-size: .75em;
+    }
+}
+
+/*ANIMATION*/
+@media screen and (min-width: 800px){
+    .summary{
+        animation: animatedBackground .7s linear infinite;
+    }
+}
+
+
+
+
+
+

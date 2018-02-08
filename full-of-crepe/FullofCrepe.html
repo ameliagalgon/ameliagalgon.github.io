@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	   <meta charset="utf-8">
+        <title>Full of Crepe | Home </title>
+
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+	   <meta name="robots" content="all">
+        
+        <!-- javascript/jquery -->
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="js/noframework.waypoints.min.js"></script>
+        <script src="app.js"></script>
+        
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="FullOfCrepe_logo.png" />
+        <!-- style sheet -->
+        <link href="styles.css" rel="stylesheet">
+    
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+    </head>
+    <body>
+        <header>
+            <!-- Should include the address and contact info here somewhere -->
+            <div id="logo">
+                <!-- going to need to change the source file -->
+                <img src="FullOfCrepe_logo1.svg" alt="logo">
+            </div>
+            <div id="contact">
+                <div id="add1">
+                    <p>333 S. New St</p>
+                </div>
+                <div id="add2">
+                    <p>Bethlehem, PA 18015</p>
+                </div>
+                <div id="phone">
+                    <p>610.419.6400</p>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a>
+                        <ul id="submenu">
+                            <li><a href="#">Sweet</a></li>
+                            <li><a href="#">Savory</a></li>
+                            <li><a href="#">Fill your own</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="banner">
+            <!-- this could have a background image or something... I don't know -->
+            <h1>Will you go Savory or Sweet?</h1>
+
+        </div>
+        <div id="container">
+            <div id="about">
+                <img src="crepe_pic_2.jpeg" alt="crepe image">
+                <div id="about-content">
+                    <h3>Welcome to our Crêperie</h3>
+                    <p>We are located in the heart of the historic south side of Bethlehem and are your number choice for fresh, local crepes. Whether you prefer your crepes sweet or savory, we offer a large menu of great options for whatever your craving may be. With our "fill your own" menu and our vegan and gluten free options, our crepes are made with you in mind.</p>
+                    <div id="hours">
+                    <h3>Hours</h3>
+                        <div class="day">
+                            <h3 class="weekday">Monday</h3>
+                            <p class="schedule">8AM - 6PM</p>
+                        </div>
+                        <div class="day">
+                            <h3 class="weekday">Tuesday</h3>
+                            <p class="schedule">8AM - 6PM</p>
+                        </div>
+                        <div class="day">
+                            <h3 class="weekday">Wednesday</h3>
+                            <p class="schedule">8AM - 6PM</p>
+                        </div>
+                        <div class="day">
+                            <h3 class="weekday">Thursday</h3>
+                            <p class="schedule">8AM - 6PM</p>
+                        </div>
+                        <div class="day">
+                            <h3 class="weekday">Friday</h3>
+                            <p class="schedule">8AM - 6PM</p>
+                        </div>
+                        <div class="day">
+                            <h3 class="weekday">Saturday</h3>
+                            <p class="schedule">8AM - 6PM</p>
+                        </div>
+                        <div class="day">
+                            <h3 class="weekday">Sunday</h3>
+                            <p class="schedule">8AM - 5PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="about-tiles">
+                <div id="tile1" class="tile">
+                    <p>We offer a glutten free and vegan batter for all of your dietary needs</p>
+                </div>
+                <div id="tile2" class="tile">
+                    <p>Call us ahead of time and have your crepe ready when you walk in</p>
+                </div>
+                <div id="tile3" class="tile">
+                    <p>Check out our specials when you walk in</p>
+                </div>
+            </div>
+            <div id="menu">
+                <h1>Menu</h1>
+                <div class="category" id="sweet">
+                    <h2>Sweet Favorites</h2>
+                    <div class="menu-item" id="old-glory">
+                        <div class="item-name">
+                            <h3>Old Glory</h3>
+                        </div>
+                        <div class="description">
+                            <p>Strawberries, Blueberries, and Cream Cheese</p>
+                        </div>
+                        <div class="price">
+                            <p>(6.46 + .39)</p>
+                        </div>
+                        <div class="total">
+                            <p>6.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="a-bomb">
+                        <div class="item-name">
+                            <h3>A-Bomb</h3>
+                        </div>
+                        <div class="description">
+                            <p>Dark Chocolate Strawbery Cheesecake</p>
+                        </div>
+                        <div class="price">
+                            <p>(7.41 + .44)</p>
+                        </div>
+                        <div class="total">
+                            <p>7.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="cbpb">
+                        <div class="item-name">
+                            <h3>CBPB</h3>
+                        </div>
+                        <div class="description">
+                            <p>Milk Chocolate, Banana, and Peanut Butter</p>
+                        </div>
+                        <div class="price">
+                            <p>(6.46 + .39)</p>
+                        </div>
+                        <div class="total">
+                            <p>6.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="the-bond-girl">
+                        <div class="item-name">
+                            <h3>The Bond Girl</h3>
+                        </div>
+                        <div class="description">
+                            <p>Fresh Strawberries, Blueberries, and Raspberries with Mascarpone Cheese and Lemon Curd, finished with Creme Anglaise</p>
+                        </div>
+                        <div class="price">
+                            <p>(9.29 + .56)</p>
+                        </div>
+                        <div class="total">
+                            <p>9.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="nuts-and-berries">
+                        <div class="item-name">
+                            <h3>Nuts and Berries</h3>
+                        </div>
+                        <div class="description">
+                            <p>Nutella and Fresh Strawberries</p>
+                        </div>
+                        <div class="price">
+                            <p>(5.52 + .33)</p>
+                        </div>
+                        <div class="total">
+                            <p>5.85</p>
+                        </div>
+                        <div class="option">
+                            <div class="description">
+                                <p>OR Fresh Raspberries</p>
+                            </div>
+                            <div class="price">
+                                <p>(6.46 + .39)</p>
+                            </div>
+                            <div class="total">
+                                <p>6.85</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="frenchie">
+                        <div class="item-name">
+                            <h3>Frenchie</h3>
+                        </div>
+                        <div class="description">
+                            <p>Fresh Lemon and Sugar</p>
+                        </div>
+                        <div class="price">
+                            <p>(4.58 + .27)</p>
+                        </div>
+                        <div class="total">
+                            <p>4.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="moravian-sugar-cake">
+                        <div class="item-name">
+                            <h3>Moravian Sugar Cake</h3>
+                        </div>
+                        <div class="description">
+                            <p>Brown Sugar, Cinnamon, and Butter</p>
+                        </div>
+                        <div class="price">
+                            <p>(4.58 + .27)</p>
+                        </div>
+                        <div class="total">
+                            <p>4.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="sweet-p">
+                        <div class="item-name">
+                            <h3>Sweet P</h3>
+                        </div>
+                        <div class="description">
+                            <p>Nutella, Peanut BUtter, Fresh Raspberries, and Crème Anglaise</p>
+                        </div>
+                        <div class="price">
+                            <p>(7.41 + .44)</p>
+                        </div>
+                        <div class="total">
+                            <p>7.85</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="category" id="savory">
+                    <h2>Savory Favorites</h2>
+                    <div class="menu-item" id="blue-plate">
+                        <div class="item-name">
+                            <h3>Blue Plate</h3>
+                        </div>
+                        <div class="description">
+                            <p>Egg (Over or Scrambled), Cheese (Cheddar, Mozzarella, Swiss, or Cooper Extra-Sharp American), and Boar's Head Ham or Bacon - ADD Hank Sauce Hot Sauce, Maple Syrup, or Pesto Mayo</p>
+                        </div>
+                        <div class="price">
+                            <p>(6.46 + .39)</p>
+                        </div>
+                        <div class="total">
+                            <p>6.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="the-kid">
+                        <div class="item-name">
+                            <h3>The Kid</h3>
+                        </div>
+                        <div class="description">
+                            <p>Spinach, Tomato, Caramelized Onion, and Goat Cheese with Balsamic Reduction</p>
+                        </div>
+                        <div class="price">
+                            <p>(6.46 + .39)</p>
+                        </div>
+                        <div class="total">
+                            <p>6.85</p>
+                        </div>
+                        <div class="option">
+                            <div class="description">
+                            <p>**ADD and Over Easy Egg and Boar's Head Bacon to make it a "Mega"</p>
+                            </div>
+                            <div class="price">
+                                <p>(8.35 + .50)</p>
+                            </div>
+                            <div class="total">
+                                <p>8.85</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="canuck">
+                        <div class="item-name">
+                            <h3>Canuck</h3>
+                        </div>
+                        <div class="description">
+                            <p>Applewood Smoked Bacon and Maple Syrup</p>
+                        </div>
+                        <div class="price">
+                            <p>(5.52 + .33)</p>
+                        </div>
+                        <div class="total">
+                            <p>5.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="taylor-made">
+                        <div class="item-name">
+                            <h3>Taylor-Made</h3>
+                        </div>
+                        <div class="description">
+                            <p>Scrambled Egg, Applewood Smoked Bacon, Caramelized Onion, Cream Cheese, and Pecans finished with Maple Syrup</p>
+                        </div>
+                        <div class="price">
+                            <p>(8.35 + .50)</p>
+                        </div>
+                        <div class="total">
+                            <p>8.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="cmp">
+                        <div class="item-name">
+                            <h3>CMP</h3>
+                        </div>
+                        <div class="description">
+                            <p>Brie, Spinach, Almonds, Craisins, Honey, and Balsamic Reduction</p>
+                        </div>
+                        <div class="price">
+                            <p>(6.46 + .39)</p>
+                        </div>
+                        <div class="total">
+                            <p>6.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="triple-s">
+                        <div class="item-name">
+                            <h3>Triple S</h3>
+                        </div>
+                        <div class="description">
+                            <p>Boar's Head Ham, Brie, and Raspberry Preserves finished with Powdered Sugar</p>
+                        </div>
+                        <div class="price">
+                            <p>(6.46 + .39)</p>
+                        </div>
+                        <div class="total">
+                            <p>6.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="the-conway">
+                        <div class="item-name">
+                            <h3>The Conway</h3>
+                        </div>
+                        <div class="description">
+                            <p>Boar's Head Roast Beef, Chipotle Gouda, and Sweet Vidalia Onion Sauce</p>
+                        </div>
+                        <div class="price">
+                            <p>(9.29 + .56)</p>
+                        </div>
+                        <div class="total">
+                            <p>9.85</p>
+                        </div>
+                        <div class="option">
+                            <div class="description">
+                                <p>**ADD an Egg to create the ultimate Spicy Steak n' Eggs Breakfast Crepe</p>
+                            </div>
+                            <div class="price">
+                                <p>(10.24 + .61)</p>
+                            </div>
+                            <div class="total">
+                                <p>10.85</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="smilin-hawaiian">
+                        <div class="item-name">
+                            <h3>Smilin' Hawaiian</h3>
+                        </div>
+                        <div class="description">
+                            <p>Boar's Head Ham and Beason Salse Co's Fresh Pineapple Tomatilla Salse, Mainara, and Mozzarella</p>
+                        </div>
+                        <div class="price">
+                            <p>(7.41 + .44)</p>
+                        </div>
+                        <div class="total">
+                            <p>7.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="turkey-lurkee">
+                        <div class="item-name">
+                            <h3>Turkey Lurkee</h3>
+                        </div>
+                        <div class="description">
+                            <p>Boar's Head Oven Gold Turkey, Mozzarella, Spinach, Tomato, and Pesto Mayo drizzed with Balsamic Reduction</p>
+                        </div>
+                        <div class="price">
+                            <p>(7.41 + .44)</p>
+                        </div>
+                        <div class="total">
+                            <p>7.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="the-beast">
+                        <div class="item-name">
+                            <h3>The Beast</h3>
+                        </div>
+                        <div class="description">
+                            <p>Boar's Head Roast Beef, Brie, Caramelized Onions, Tomato, and Horseradish Dill Sour Cream</p>
+                        </div>
+                        <div class="price">
+                            <p>(9.29 + .56)</p>
+                        </div>
+                        <div class="total">
+                            <p>9.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="christy-cristo">
+                        <div class="item-name">
+                            <h3>Christy Cristo</h3>
+                        </div>
+                        <div class="description">
+                            <p>Boar's Head Ham and Over Gold Turkey with Swiss Cheese and Raspberry Preserves finished with Maple Syrup and Powdered Sugar</p>
+                        </div>
+                        <div class="price">
+                            <p>(8.35 + .50)</p>
+                        </div>
+                        <div class="total">
+                            <p>8.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="buff-chick">
+                        <div class="item-name">
+                            <h3>Buff Chick</h3>
+                        </div>
+                        <div class="description">
+                            <p>Boar's Head Sliced Chicked and Mozzarella Cheese topped with Hank Sauce and Blue Cheese Dressing</p>
+                        </div>
+                        <div class="price">
+                            <p>(6.46 + .39)</p>
+                        </div>
+                        <div class="total">
+                            <p>6.85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="all-american">
+                        <div class="item-name">
+                            <h3>All-American</h3>
+                        </div>
+                        <div class="description">
+                            <p>Boar's Head Ham, Cheddar, Cooper American, and Poached Apples</p>
+                        </div>
+                        <div class="price">
+                            <p>(7.41 + .44)</p>
+                        </div>
+                        <div class="total">
+                            <p>7.85</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category" id="fill">
+                    <h2>Fill Your Own</h2>
+                    <div class="menu-item">
+                        <div class="ingrediant">
+                            <h3>Egg</h3>
+                        </div>
+                        <div class="description">
+                            <p>Over Easy or Scambled</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="ingrediant">
+                            <h3>Cheese</h3>
+                        </div>
+                        <div class="description">
+                            <p>Cheddar, Mozzarella, Swiss, Cooper Extra-Sharp American, Chipotle Gouda, Cream Cheese</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="ingrediant">
+                            <h3>Premium Cheeses</h3>
+                        </div>
+                        <div class="description">
+                            <p>Brie and Goat Cheese (add $1 for substitution)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="ingrediant">
+                            <h3>Meats</h3>
+                        </div>
+                        <div class="description">
+                            <p>Applewood Smoked Bacon, Boar's Head Roast Beef, Ham, Ovengold Turkey, or Slicked Chicken</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="ingrediant">
+                            <h3>Veggies</h3>
+                        </div>
+                        <div class="description">
+                            <p>Tomato, Baby Spinach, Carmelized Onions, Seasoned Sautéed Mushrooms, Broccoli in Herbes de Provence</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="ingrediant">
+                            <h3>Chocolates</h3>
+                        </div>
+                        <div class="description">
+                            <p>Nutella, Milk Chocolate, Dark Chocolate, Bittersweet Chocolate</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="ingrediant">
+                            <h3>Fruits</h3>
+                        </div>
+                        <div class="description">
+                            <p>Bananas, Lemons, Strawberries, Raspberries, Blueberries (add $1 for Raspberries and Blueberry sub)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="ingrediant">
+                            <h3>Sweet Stuff and Spreads</h3>
+                        </div>
+                        <div class="description">
+                            <p>Crème Anglaise, Mascarpone Cheese, Craisins, Strawberry Preserves, Raspberry Preserves, Peanut Butter, Suger, Brown Sugar, Powdered Sugar, Maple Syrup, Mini-marshmallows, Graham Cracher Crumbs, Lemon Curd, Almonds, Pecans, Walnuts, Dulce de Leche</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="ingrediant">
+                            <h3>Savory Stuff</h3>
+                        </div>
+                        <div class="description">
+                            <p>Traditional Hummus, Chipotle Hummus, Pesto Mayo, Honey Mustard, Marinara, Mayo, Horseradish Dill Sauce, Extra Virgin Olive Oil, Balsamic Reduction, Sweet Vidalia Onion Sauce, Sea Salt, Garlic Cream Sause, Chipotle Spread, Bacon Aioli</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="note">
+                <p>** pricing includes tax **</p>
+            </div>
+            
+        </div>
+        <div id="connect">
+            <h3>Don't forget to connect</h3>
+            <p>Stay updated with all of our latest announcements and join our social media circles</p>
+            <div id="social">
+                <a href="https://www.facebook.com/FullOfCrepeLLC/" target="_blank"><img src="white-facebook-256.png" alt="facebook"></a>
+                <a href="https://twitter.com/fullofcrepellc" target="_blank"><img src="twitter-circle-white.png" alt="twitter"></a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,455 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: helvetica, arial; }
+  @media screen and (max-width: 620px) {
+    body {
+      overflow-y: auto; }
+      body p {
+        font-size: 1.3em; } }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/****** ACTUAL STUFF *********/
+@font-face {
+  font-family: HandShop;
+  src: url(HandShop.ttf); }
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: Times;
+  color: #38342F; }
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  /*
+  background: url(halftone-background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+  /*animation*/
+  -webkit-animation-duration: .7s; }
+  .page .content {
+    width: 85vw;
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    height: 100vh; }
+    .page .content h1 {
+      text-transform: uppercase;
+      font-family: HandShop;
+      font-size: 3em; }
+    .page .content h3 {
+      text-transform: uppercase;
+      font-family: HandShop;
+      font-size: 1.5em; }
+  @media screen and (max-width: 880px) {
+    .page .content {
+      width: 100vw;
+      left: 0; } }
+
+#home-page .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #home-page .content img {
+    width: 40%;
+    height: auto;
+    margin: 20px; }
+  #home-page .content p {
+    font-size: 1em;
+    width: 80%;
+    padding: 20px 0;
+    -webkit-animation-delay: .6s; }
+
+#about-page .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70vw;
+  left: 25%; }
+  #about-page .content .heading {
+    padding: 30px; }
+  #about-page .content #textbox {
+    outline: 5px solid #38342F;
+    outline-offset: -20px;
+    width: 90%;
+    height: 80vh;
+    text-align: center;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    height: 60vh; }
+    @media screen and (max-width: 620px) {
+      #about-page .content #textbox {
+        outline: none; } }
+    @media screen and (max-width: 620px) {
+      #about-page .content #textbox {
+        height: auto; } }
+    #about-page .content #textbox p {
+      padding-left: 40px;
+      margin-bottom: 10px;
+      width: 55%;
+      text-align: left;
+      font-weight: bold;
+      /*animatioin*/
+      -webkit-animation-delay: .5s; }
+#about-page img {
+  width: 30%;
+  min-width: 300px;
+  height: auto;
+  position: absolute;
+  left: 65%;
+  bottom: 0; }
+@media screen and (max-width: 880px) {
+  #about-page img {
+    display: none; }
+  #about-page p {
+    width: 100%; }
+  #about-page .content {
+    width: 100%;
+    left: 0; }
+    #about-page .content #textbox p {
+      padding-right: 40px;
+      width: 100%;
+      text-align: center; } }
+@media screen and (max-width: 620px) {
+  #about-page {
+    overflow-y: auto; }
+    #about-page .content {
+      display: block; }
+    #about-page #textbox {
+      margin: auto; }
+    #about-page p {
+      font-size: 1.2em;
+      padding: 10px 0 40px 0;
+      margin: auto; } }
+
+#bikes-page .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+  #bikes-page .content .heading {
+    width: 100%;
+    padding: 10px 0 5px 0; }
+  #bikes-page .content .bike {
+    background: #fff;
+    padding: 50px 0 60px 0;
+    width: 30%;
+    outline: 5px double #38342F;
+    outline-offset: -5px;
+    /*minimun size*/
+    min-width: 150px; }
+    #bikes-page .content .bike img {
+      width: 80%;
+      height: auto;
+      margin: auto; }
+    #bikes-page .content .bike .title {
+      color: #fff;
+      width: 100%;
+      background: #38342F;
+      padding: 10px 0; }
+    #bikes-page .content .bike .rating img {
+      width: 10px;
+      height: auto; }
+    #bikes-page .content .bike .price {
+      font-size: 3em;
+      font-weight: bold; }
+    #bikes-page .content .bike .description {
+      width: 80%;
+      margin: auto; }
+  #bikes-page .content #one {
+    -webkit-animation-delay: .5s; }
+  #bikes-page .content #two {
+    -webkit-animation-delay: 1s; }
+  #bikes-page .content #three {
+    -webkit-animation-delay: 1.5s; }
+@media screen and (max-width: 620px) {
+  #bikes-page {
+    overflow-y: auto; }
+    #bikes-page .content {
+      top: 900px; }
+      #bikes-page .content .bike {
+        width: 100%;
+        border-left: none;
+        border-right: none; } }
+
+#services-page .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #services-page .content .heading {
+    width: 100%;
+    margin: 30px 0; }
+  #services-page .content .service {
+    width: 70%;
+    text-align: left;
+    margin: 20px 0 0 0; }
+    #services-page .content .service .bullet {
+      width: 100px;
+      height: 100px;
+      background: #38342F;
+      border-radius: 100%;
+      float: left;
+      margin: 0 20px; }
+    #services-page .content .service h3 {
+      font-family: HandShop;
+      text-transform: uppercase; }
+  #services-page .content #service-one {
+    -webkit-animation-delay: .5s; }
+  #services-page .content #service-two {
+    -webkit-animation-delay: 1s; }
+  #services-page .content #service-three {
+    -webkit-animation-delay: 1.5s; }
+@media screen and (max-width: 880px) {
+  #services-page .bullet {
+    display: none; } }
+@media screen and (max-width: 620px) {
+  #services-page {
+    overflow-y: auto; }
+    #services-page .content {
+      display: block;
+      margin: auto; }
+      #services-page .content .service {
+        margin: auto;
+        padding: 10px 0; } }
+
+#contact-page .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+  #contact-page .content p {
+    -webkit-animation-delay: 1s; }
+#contact-page img {
+  padding-right: 2%;
+  -webkit-animation-delay: .3s; }
+@media screen and (max-width: 620px) {
+  #contact-page .content {
+    padding-top: 30px;
+    display: block;
+    margin: auto; } }
+
+nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90vh;
+  padding: 20px;
+  width: 15vw;
+  position: fixed;
+  font-weight: bold;
+  z-index: 1; }
+  nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 150px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    nav ul li {
+      cursor: pointer;
+      text-transform: uppercase;
+      font-family: HandShop; }
+  nav #contact {
+    font-size: .65em;
+    text-transform: uppercase; }
+    nav #contact #address {
+      margin-bottom: 10px; }
+  @media screen and (max-width: 880px) {
+    nav {
+      display: block;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      top: 95vh;
+      width: 100%;
+      heigth: 20vh;
+      padding: 0;
+      background: #fff; }
+      nav #contact {
+        display: none; }
+      nav #logo {
+        display: none; }
+      nav ul {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        width: 100%;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; } }
+
+#logo {
+  width: 70%;
+  heigth: 70%; }
+
+.active-page {
+  display: block; }
+
+/*# sourceMappingURL=styles.css.map */
