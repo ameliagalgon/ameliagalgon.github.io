@@ -37,6 +37,24 @@ main .project .project-image{
   background-image: url(../assets/images/bloccit-1.png);
 }
 
+#pixel-run .project-image{
+  background-image: url(../assets/images/pixel_run.png)
+}
+#retro-wheels .project-image{
+  background-image: url(../assets/images/retro_wheels_logo.svg);
+  background-size: contain;
+  background-position: center;
+  background-color: #fff;
+}
+#full-of-crepe .project-image{
+  background-image: url(../assets/images/full_of_crepe.png);
+  background-position: center;
+}
+#css-zen-garden .project-image{
+  background-image: url(../assets/images/css_zen_garden.png);
+  background-position: center;
+}
+
 main .project .project-name{
     font-weight: 900;
     font-size: 2em;

@@ -133,6 +133,21 @@ nav .dropdown-menu{
   background-position: bottom left;
 }
 
+#all-web{
+  background-image: url(../assets/images/web_projects.png);
+  background-size: cover;
+  background-color: #2c1833;
+}
+#all-web .project-content{
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+}
+#all-web .project-content h1{
+  font-size: 4em;
+}
+
 .project .content{
     display: flex;
     flex-direction: column;
